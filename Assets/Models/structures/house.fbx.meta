@@ -4,7 +4,13 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: house
+    100004: roof
+    100006: skirts
     400000: //RootNode
+    400002: house
+    400004: roof
+    400006: skirts
     2100000: Fenster
     2100002: glass_window
     2100004: window_sill
@@ -13,11 +19,58 @@ ModelImporter:
     2100010: floor
     2100012: ceiling
     2300000: //RootNode
+    2300002: house
+    2300004: roof
+    2300006: skirts
     3300000: //RootNode
+    3300002: house
+    3300004: roof
+    3300006: skirts
     4300000: "W\xFCrfel_3"
+    4300002: skirts
+    4300004: roof
+    4300006: house
     6400000: //RootNode
+    6400002: house
+    6400004: roof
+    6400006: skirts
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fenster
+    second: {fileID: 2100000, guid: 2201ed437749e8c4cb0ec0a3a232b601, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ceiling
+    second: {fileID: 2100000, guid: 517fcca8e448e774399bf16bacc4f324, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_frame
+    second: {fileID: 2100000, guid: c5b3193e30f9cac4ca7a1978ae31bdab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2100000, guid: edf5b805ea13a8a45b2d51e66e5ac1d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_window
+    second: {fileID: 2100000, guid: a4049e69b56b0d8438952d3e506fcfd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: 2f00a6064fb0b8f4e818d5c9ce9e31e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: window_sill
+    second: {fileID: 2100000, guid: b7074fcc3beb6ac49a7f6c21cbb18d5f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
