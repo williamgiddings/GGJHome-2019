@@ -37,7 +37,7 @@ namespace Home
 
         public string GetName()
         {
-            return m_State == EnumState.Close ? "Open Door" : "Door";
+            return m_State == EnumState.Close && Enabled ? "Open Door" : "Door";
         }
     }
 }
