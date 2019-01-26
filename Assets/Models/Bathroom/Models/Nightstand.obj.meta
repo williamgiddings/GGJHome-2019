@@ -1,16 +1,28 @@
 fileFormatVersion: 2
-guid: d1d0f8f011413284cb49796ab51398ad
+guid: 393d374693d10a245ba4a95f2a16e43e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Nightstand_Bottom
+    100004: Nightstand_Nightstand
+    100006: Nightstand_Top
     400000: //RootNode
-    2100000: cot_frame
-    2100002: cot_quilt
-    2100004: cot_matress
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Null Crib_1
+    400002: Nightstand_Bottom
+    400004: Nightstand_Nightstand
+    400006: Nightstand_Top
+    2100000: Nightstand_BottomMat
+    2100002: Nightstand_NightstandMat
+    2100004: Nightstand_TopMat
+    2300000: Nightstand_Bottom
+    2300002: Nightstand_Nightstand
+    2300004: Nightstand_Top
+    3300000: Nightstand_Bottom
+    3300002: Nightstand_Nightstand
+    3300004: Nightstand_Top
+    4300000: Nightstand_Bottom
+    4300002: Nightstand_Nightstand
+    4300004: Nightstand_Top
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -42,7 +54,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.075
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
