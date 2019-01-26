@@ -7,10 +7,12 @@ ModelImporter:
     100002: house
     100004: roof
     100006: skirts
+    100008: collision
     400000: //RootNode
     400002: house
     400004: roof
     400006: skirts
+    400008: collision
     2100000: Fenster
     2100002: glass_window
     2100004: window_sill
@@ -22,18 +24,22 @@ ModelImporter:
     2300002: house
     2300004: roof
     2300006: skirts
+    2300008: collision
     3300000: //RootNode
     3300002: house
     3300004: roof
     3300006: skirts
+    3300008: collision
     4300000: "W\xFCrfel_3"
     4300002: skirts
     4300004: roof
     4300006: house
+    4300008: collision
     6400000: //RootNode
     6400002: house
     6400004: roof
     6400006: skirts
+    6400008: collision
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
@@ -44,8 +50,38 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: c0f4e65783248e942adfa4a0addfb659, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bathroom_wall
+    second: {fileID: 2100000, guid: e4dbfa63dd3faa64dbbe7e167909477d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bedroom_wall
+    second: {fileID: 2100000, guid: 2b4229f3f0940144f8dbdcb9d8b7e1fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bigroom_wall
+    second: {fileID: 2100000, guid: f06eede371539e4409419f5cb90981f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: ceiling
     second: {fileID: 2100000, guid: 517fcca8e448e774399bf16bacc4f324, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: corridor1_wall
+    second: {fileID: 2100000, guid: 556368583408d98449a89c116b42bb8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: corridor2_wall
+    second: {fileID: 2100000, guid: 6da5b47b81811b44db071f1f8475434a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -61,6 +97,21 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: glass_window
     second: {fileID: 2100000, guid: a4049e69b56b0d8438952d3e506fcfd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lounge_wall
+    second: {fileID: 2100000, guid: 9f98a5ce6f619bf49a5e9ff2f73ffe08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: masterbedroom_wall
+    second: {fileID: 2100000, guid: 5f88273f957f13945befeabde310b414, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: smallroom_wall
+    second: {fileID: 2100000, guid: 4deb455cfce60b947a1080aac1507d1b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
