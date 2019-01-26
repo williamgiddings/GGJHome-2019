@@ -28,7 +28,7 @@ namespace Home
 
         public void PlayAnimation()
         {
-            m_Animator.Play("open", -1);
+            m_Animator.Play("Open", -1);
             m_State = EnumState.Open;
             //    Debug.Log("PlayAnimation()");
             //    switch (m_State)
