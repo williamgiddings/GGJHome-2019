@@ -8,11 +8,13 @@ ModelImporter:
     100004: roof
     100006: skirts
     100008: collision
+    100010: skirts.001
     400000: //RootNode
     400002: house
     400004: roof
     400006: skirts
     400008: collision
+    400010: skirts.001
     2100000: Fenster
     2100002: glass_window
     2100004: window_sill
@@ -25,21 +27,25 @@ ModelImporter:
     2300004: roof
     2300006: skirts
     2300008: collision
+    2300010: skirts.001
     3300000: //RootNode
     3300002: house
     3300004: roof
     3300006: skirts
     3300008: collision
+    3300010: skirts.001
     4300000: "W\xFCrfel_3"
     4300002: skirts
     4300004: roof
     4300006: house
     4300008: collision
+    4300010: skirts.001
     6400000: //RootNode
     6400002: house
     6400004: roof
     6400006: skirts
     6400008: collision
+    6400010: skirts.001
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
