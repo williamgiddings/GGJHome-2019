@@ -48,7 +48,7 @@ MonoBehaviour:
   ParentObject: {fileID: 4167732374794265327}
   ChildObject: {fileID: 4167732374531933409}
   StartingChar: 2
-  InteractLabel: {fileID: 0}
+  UI: {fileID: 0}
 --- !u!1001 &4167732374531899975
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -14,18 +14,17 @@ namespace Home
     {
         private EnumCharTypes m_CurrentType;
         private Camera m_Camera;
-
         public GameObject ParentObject;
         public GameObject ChildObject;
         public EnumCharTypes StartingChar;
-        public Text InteractLabel;
+        public GameObject UI;
 
         // Start is called before the first frame update
         void Start()
         {
             Debug.Assert(ParentObject != null, "Parent Object is null", ParentObject);
             Debug.Assert(ChildObject != null, "Child Object is null", ChildObject);
-            Debug.Assert(InteractLabel != null, "Interact Label is null", InteractLabel);
+            Debug.Assert(UI != null, "Interact Label is null", UI);
 
             m_CurrentType = StartingChar;
             HandleCharacter();
@@ -76,33 +75,33 @@ namespace Home
             {
                 if (hit.collider.isTrigger)
                 {
-                    InteractLabel.text = ManageInteractLabel(hit.collider.gameObject);
+                    ManageInteractLabel(hit.collider.gameObject);
 
                     if (Input.GetKeyDown(KeyCode.E))
                         ManageIteraction(hit.collider.gameObject);
                 }
                 else
                 {
-                    InteractLabel.text = "";
+                    UI.GetComponent<UIManager>().SetObjectName("");
                 }
             }
         }
 
-        string ManageInteractLabel(GameObject obj)
+        void ManageInteractLabel(GameObject obj)
         {
-            if (obj.CompareTag("InteractiveDoor"))
-            {
-                return obj.GetComponent<DoorManager>().GetName();
-            }
+            InteractObject iObj = obj.GetComponent<InteractObject>();
 
-            return "";
+            if (iObj)
+                UI.GetComponent<UIManager>().SetObjectName(iObj.Name);
         }
         void ManageIteraction(GameObject obj)
         {
-            if (obj.CompareTag("InteractiveDoor"))
-            {
-                obj.GetComponent<DoorManager>().PlayAnimation();
-            }
+            Generic3DButton button = obj.GetComponentInChildren<Generic3DButton>();
+
+            if (button)
+                button.Interact();
+            else
+                Debug.LogWarning("button was null!");
         }
     }
 }

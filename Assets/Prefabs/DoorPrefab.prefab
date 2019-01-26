@@ -28,6 +28,47 @@ MonoBehaviour:
   GOAnimator: {fileID: 4304168830570767542}
   Enabled: 1
   Name: Open Door
+--- !u!114 &6904262089768981251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4304168830570767546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aed8864e34d3af42845feddb125e0ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 99347833}
+        m_MethodName: PlayAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &386097137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4304168830570767546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ab63c3133297d4a805276b0eb34b6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Door
 --- !u!65 &1586516068
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52,7 +93,7 @@ GameObject:
   - component: {fileID: 4304168831706251316}
   m_Layer: 0
   m_Name: DoorPrefab
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,18 +123,6 @@ PrefabInstance:
     - target: {fileID: 100008, guid: e6cf676e7edb0474c9dd64a73a6e0cc3, type: 3}
       propertyPath: m_Name
       value: DoorMesh
-      objectReference: {fileID: 0}
-    - target: {fileID: 100008, guid: e6cf676e7edb0474c9dd64a73a6e0cc3, type: 3}
-      propertyPath: m_TagString
-      value: Door
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: e6cf676e7edb0474c9dd64a73a6e0cc3, type: 3}
-      propertyPath: m_TagString
-      value: Door
-      objectReference: {fileID: 0}
-    - target: {fileID: 100010, guid: e6cf676e7edb0474c9dd64a73a6e0cc3, type: 3}
-      propertyPath: m_TagString
-      value: Door
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e6cf676e7edb0474c9dd64a73a6e0cc3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -143,18 +172,6 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a1628efa69d05a04ca9e2ab88437b727, type: 2}
-    - target: {fileID: 100002, guid: e6cf676e7edb0474c9dd64a73a6e0cc3, type: 3}
-      propertyPath: m_TagString
-      value: Door
-      objectReference: {fileID: 0}
-    - target: {fileID: 100004, guid: e6cf676e7edb0474c9dd64a73a6e0cc3, type: 3}
-      propertyPath: m_TagString
-      value: InteractiveDoor
-      objectReference: {fileID: 0}
-    - target: {fileID: 100006, guid: e6cf676e7edb0474c9dd64a73a6e0cc3, type: 3}
-      propertyPath: m_TagString
-      value: Door
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6cf676e7edb0474c9dd64a73a6e0cc3, type: 3}
 --- !u!1 &4304168830570767542 stripped
