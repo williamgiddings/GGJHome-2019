@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace Home
 {
@@ -12,16 +13,19 @@ namespace Home
     public class CharManager : MonoBehaviour
     {
         private EnumCharTypes m_CurrentType;
+        private Camera m_Camera;
 
         public GameObject ParentObject;
         public GameObject ChildObject;
         public EnumCharTypes StartingChar;
+        public Text InteractLabel;
 
         // Start is called before the first frame update
         void Start()
         {
             Debug.Assert(ParentObject != null, "Parent Object is null", ParentObject);
             Debug.Assert(ChildObject != null, "Child Object is null", ChildObject);
+            Debug.Assert(InteractLabel != null, "Interact Label is null", InteractLabel);
 
             m_CurrentType = StartingChar;
             HandleCharacter();
@@ -40,6 +44,7 @@ namespace Home
                 m_CurrentType = EnumCharTypes.Parent;
                 HandleCharacter();
             }
+            HandleInteractions();
         }
 
         void HandleCharacter()
@@ -51,13 +56,35 @@ namespace Home
             {
                 case EnumCharTypes.Child:
                     ChildObject.SetActive(true);
+                    m_Camera = ChildObject.GetComponentInChildren<Camera>();
                     break;
                 case EnumCharTypes.Parent:
                     ParentObject.SetActive(true);
+                    m_Camera = ParentObject.GetComponentInChildren<Camera>();
                     break;
                 default:
                     Debug.LogWarning("Unknown enum value passed");
                     break;
+            }
+        }
+
+        void HandleInteractions()
+        {
+            RaycastHit hit;
+            Ray ray = new Ray(m_Camera.transform.position, m_Camera.transform.forward);
+            if (Physics.Raycast(ray, out hit))
+            {
+                if (hit.collider.isTrigger)
+                {
+                    InteractLabel.text = hit.collider.gameObject.GetComponent<DoorManager>().Name;
+
+                    if (Input.GetKeyDown(KeyCode.E))
+                        hit.collider.gameObject.GetComponent<DoorManager>().PlayAnimation();
+                }
+                else
+                {
+                    InteractLabel.text = "";
+                }
             }
         }
     }
