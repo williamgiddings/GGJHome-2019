@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cam: {fileID: 4167732374529902279}
+  InteractLabel: {fileID: 0}
 --- !u!1 &4167732374729865267
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,6 +75,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cam: {fileID: 4167732374796165321}
+  InteractLabel: {fileID: 0}
 --- !u!1001 &4167732374531899975
 PrefabInstance:
   m_ObjectHideFlags: 0

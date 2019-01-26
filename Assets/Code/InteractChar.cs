@@ -1,20 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace Home
 {
     public class InteractChar : MonoBehaviour
     {
         public Camera Cam;
+        public Text InteractLabel;
 
-        // Start is called before the first frame update
         void Start()
         {
-
+            Debug.Assert(Cam != null, "Camera is null!");
         }
 
-        // Update is called once per frame
         void Update()
         {
             RaycastHit hit;
@@ -23,9 +21,16 @@ namespace Home
             Debug.DrawRay(Cam.transform.position, Cam.transform.forward);
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.isTrigger && Input.GetKeyDown(KeyCode.E))
+                if (hit.collider.isTrigger)
                 {
-                    hit.collider.gameObject.GetComponent<DoorManager>().PlayAnimation();
+                    InteractLabel.text = hit.collider.gameObject.GetComponent<DoorManager>().Name;
+
+                    if (Input.GetKeyDown(KeyCode.E))
+                        hit.collider.gameObject.GetComponent<DoorManager>().PlayAnimation();
+                }
+                else
+                {
+                    InteractLabel.text = "";
                 }
             }
         }
