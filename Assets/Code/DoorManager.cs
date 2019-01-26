@@ -33,22 +33,11 @@ namespace Home
                 m_Animator.Play("Open", -1);
                 m_State = EnumState.Open;
             }
-            //    Debug.Log("PlayAnimation()");
-            //    switch (m_State)
-            //    {
-            //        case EnumState.Close:
-            //            m_Animator.Play("close", -1);
-            //            m_State = EnumState.Close;
-            //            break;
-            //        case EnumState.Open:
-            //            m_Animator.Play("open", -1);
-            //            m_State = EnumState.Open;
-            //            break;
-            //        default:
-            //            Debug.LogWarning("Unknown enum passed!");
-            //            break;
-            //    }
-            //}
+        }
+
+        public string GetName()
+        {
+            return m_State == EnumState.Close ? "Open Door" : "Door";
         }
     }
 }
