@@ -500,6 +500,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4167732374729865265, guid: cce84b9f77321f1408f52bf4f13a949b,
+        type: 3}
+      propertyPath: InteractLabel
+      value: 
+      objectReference: {fileID: 1075880956}
     - target: {fileID: 318018183, guid: cce84b9f77321f1408f52bf4f13a949b, type: 3}
       propertyPath: InteractLabel
       value: 

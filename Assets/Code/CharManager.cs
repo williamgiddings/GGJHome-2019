@@ -76,15 +76,32 @@ namespace Home
             {
                 if (hit.collider.isTrigger)
                 {
-                    InteractLabel.text = hit.collider.gameObject.GetComponent<DoorManager>().Name;
+                    InteractLabel.text = ManageInteractLabel(hit.collider.gameObject);
 
                     if (Input.GetKeyDown(KeyCode.E))
-                        hit.collider.gameObject.GetComponent<DoorManager>().PlayAnimation();
+                        ManageIteraction(hit.collider.gameObject);
                 }
                 else
                 {
                     InteractLabel.text = "";
                 }
+            }
+        }
+
+        string ManageInteractLabel(GameObject obj)
+        {
+            if (obj.CompareTag("InteractiveDoor"))
+            {
+                return obj.GetComponent<DoorManager>().GetName();
+            }
+
+            return "";
+        }
+        void ManageIteraction(GameObject obj)
+        {
+            if (obj.CompareTag("InteractiveDoor"))
+            {
+                obj.GetComponent<DoorManager>().PlayAnimation();
             }
         }
     }

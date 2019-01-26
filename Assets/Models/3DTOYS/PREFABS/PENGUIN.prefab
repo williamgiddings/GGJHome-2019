@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 33991392806530902}
   - component: {fileID: 23070406723909472}
   - component: {fileID: 8797854685397220522}
+  - component: {fileID: 82725518768334268}
   m_Layer: 0
-  m_Name: PENGUIN
-  m_TagString: Untagged
+  m_Name: Penguin
+  m_TagString: InteractiveToy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,3 +92,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5246059, y: 2.1629426, z: 1.2757363}
   m_Center: {x: 0.000002950428, y: 0.37244153, z: 0.15585609}
+--- !u!65 &82725518768334268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511746606845076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5246053, y: 2.1629426, z: 1.2757359}
+  m_Center: {x: -0.0000046789646, y: 0.37244248, z: 0.1558484}
