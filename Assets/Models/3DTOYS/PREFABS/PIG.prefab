@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 4105886225802320}
   - component: {fileID: 33964201789114094}
   - component: {fileID: 23517666022636996}
-  - component: {fileID: 2830180526216306770}
-  - component: {fileID: 1155700465773707885}
+  - component: {fileID: 321599377}
+  - component: {fileID: 1320908876072824723}
+  - component: {fileID: 1330552294}
   m_Layer: 0
   m_Name: Pig
   m_TagString: InteractiveToy
@@ -27,9 +28,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268163357404018}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0.405, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.10253002, y: 0.10253, z: 0.10253002}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -79,8 +80,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2830180526216306770
-BoxCollider:
+--- !u!114 &321599377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268163357404018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aed8864e34d3af42845feddb125e0ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TriggerEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1114645063, guid: 377b70a1adbb6a34cb2bf0c309643f8c, type: 3}
+        m_MethodName: SetInteractionText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: This is a Pig.
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!64 &1320908876072824723
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89,19 +118,20 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.6488354, y: 1.8823669, z: 1.2402784}
-  m_Center: {x: 0, y: 0.453439, z: 0.16110976}
---- !u!65 &1155700465773707885
-BoxCollider:
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 278210d3246b9ce4bb1eabb1072ef246, type: 3}
+--- !u!114 &1330552294
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268163357404018}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.6488354, y: 1.8823669, z: 1.2402784}
-  m_Center: {x: 0, y: 0.453439, z: 0.16110976}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ab63c3133297d4a805276b0eb34b6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Stuffed Pig
